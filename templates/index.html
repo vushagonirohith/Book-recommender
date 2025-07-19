@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Recommender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="form-container">
+    <h1>📚 Mood-based Book Recommender</h1>
+    <form action="/recommend" method="post">
+      <label>Mood:</label>
+      <select name="mood">
+  <option value="happy">Happy</option>
+  <option value="sad">Sad</option>
+  <option value="neutral">Neutral</option>
+  <option value="anxious">Anxious</option>
+  <option value="excited">Excited</option>
+  <option value="lonely">Lonely</option>
+  <option value="motivated">Motivated</option>
+</select>
+
+
+      <label>Pace:</label>
+      <select name="pace">
+        <option value="fast">Fast</option>
+        <option value="medium">Medium</option>
+        <option value="slow">Slow</option>
+      </select>
+
+      <label>Genres:</label>
+      <div class="genre-options">
+        <label><input type="checkbox" name="genres" value="romance">Romance</label>
+        <label><input type="checkbox" name="genres" value="thriller">Thriller</label>
+        <label><input type="checkbox" name="genres" value="fantasy">Fantasy</label>
+        <label><input type="checkbox" name="genres" value="mystery">Mystery</label>
+        <label><input type="checkbox" name="genres" value="historical">Historical</label>
+        <label><input type="checkbox" name="genres" value="sci-fi">Sci-Fi</label>
+      </div>
+
+      <label>Minimum Rating:</label>
+      <input type="range" name="rating" min="3" max="5" step="0.1" value="4"/>
+
+      <label>Preferred Publication Year:</label>
+      <input type="range" name="year" min="1900" max="2025" value="2010"/>
+
+      <br/><br/>
+      <button type="submit">🔍 Recommend Books</button>
+    </form>
+  </div>
+
+</body>
+</html>
