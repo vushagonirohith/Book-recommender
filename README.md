@@ -33,14 +33,10 @@ Built using **Flask**, **Python**, and **Machine Learning (KNN + TF-IDF)**, this
 > Replace these placeholders with your actual screenshots.  
 > Save them inside `static/images/screenshots/` and update the paths.
 
-| Home Page |
+| Home Page | Recommendations |
 |-----------|
-| ![Home Page](static/images/homee.png) |
+| ![Home Page](static/images/homee.png) | ![Results Page](static/images/resultss.png) |
 
-
-| Recommendations |
-|-----------------|
-| ![Results Page](static/image/resultss.png) |
 ---
 
 ## 🚀 Tech Stack
